@@ -1,0 +1,1 @@
+# Proiect---InformaticaIndustriala2024
