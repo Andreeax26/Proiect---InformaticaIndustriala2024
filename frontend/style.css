@@ -1,7 +1,7 @@
 /* Navbar container */
 .navbar {
     overflow: hidden;
-    background-color: #803bda;
+    background-color: #8e6dcc;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
@@ -110,3 +110,42 @@
     font-size: 50px;
     font-family: 'CustomFont', Pixelify;
   }
+
+  #button1, #button2, #button3, #button4 {
+    width:150px;
+    height: 150px;
+    border-radius:100%;
+    background-color:#8e6dcc;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+  #button1:hover {
+    background-color:#ac93d9;
+}
+
+#button2:hover {
+  background-color:#ac93d9;
+}
+
+#button3:hover {
+  background-color:#ac93d9;
+}
+
+#button4:hover {
+  background-color:#ac93d9;
+}
+
+.butoane {
+  display: flex;
+  justify-content: center;
+}
+
+.content-area{
+  border: 3px solid #8e6dcc; /* Example border style */
+  border-radius: 5px;
+  padding: 150px; /* Add some padding for visual separation */
+  margin: 50px; /* Add some margin for spacing */
+  background-color: #c8bbdf;
+}
+
+

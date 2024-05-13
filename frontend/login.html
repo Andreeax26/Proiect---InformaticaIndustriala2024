@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coaching Login</title>
+  <style>
+    /* Base styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #faf3ff;
+      display: flex; /* Center content vertically */
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; /* Set minimum viewport height */
+    }
+
+    .login-container {
+      background-color: #fff;
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+      padding: 30px;
+      width: 350px; /* Adjust width as needed */
+    }
+
+    /* Login form styles */
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px; /* Rounded corners for input fields */
+      margin-bottom: 15px;
+    }
+
+    .button {
+      background-color: #8e6dcc; /* Adjust button color based on index.html */
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out; /* Add hover effect */
+    }
+
+    .button:hover {
+      background-color: #ac93d9; /* Adjust hover color */
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Coaching Login</h2>
+    <form>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+      <button type="button" onclick="checkLogin()">Login</button>
+    </form>
+  </div>
+
+  <script>
+    function checkLogin() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      if (username === "Andreea" && password === "1234") {
+        window.location.href = "index.html"; // Redirect to index.html on successful login (for testing)
+      } else {
+        alert("Invalid username or password!");
+      }
+    }
+  </script>
+</body>
+</html>
