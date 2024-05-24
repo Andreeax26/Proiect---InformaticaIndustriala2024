@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Legends Boosting Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url("lolimg.jpg") no-repeat center center/cover;
+            background-position: center;
+
+        }
+        header {
+            color:#e6f1f1;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        #showcase {
+            color: #fff;
+            height: 300px;
+            text-align: center;
+            padding-top: 100px;
+        }
+        #showcase h1 {
+            font-size: 55px;
+            margin: 0;
+        }
+        .service {
+            color: #fff;
+            background: #324f626c;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .pricing {
+            display: flex;
+            justify-content: space-around;
+            background: #324f626c;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .pricing div {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            height: 300px;
+            width: 200px;
+        }
+        .profile {
+            display: inline-block;
+            align-items:self-end;
+            justify-content: start;
+            margin-top: 10px;
+            width: 30px; /* Ajustează dimensiunea imaginilor */
+            height: 30px; /* Ajustează dimensiunea imaginilor */
+        }
+        .profile img {
+            border-radius: 50%;
+        }
+        .reviews {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+        .reviews span {
+            color: rgb(251, 223, 66);
+            font-size: 20px;
+            margin-right: 5px;
+        }
+        footer {
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .slide-in-left, .slide-in-right {
+            opacity: 0;
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        }
+        .slide-in-left {
+            transform: translateX(-100%);
+        }
+        .slide-in-right {
+            transform: translateX(100%);
+        }
+        .slide-in-left.active, .slide-in-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1 class="slide-in-left">League of Legends Boosting Service</h1>
+    </div>
+</header>
+
+<section id="showcase">
+    <div class="container">
+        <h1 class="slide-in-right">Reach Your Desired Rank!</h1>
+        <p class="slide-in-right"style="font-size: x-large;">Professional and secure boosting services</p>
+    </div>
+</section>
+
+<section class="container">
+    <div class="service">
+        <h2 class="slide-in-left" style="font-size: x-large;">Our Services</h2>
+        <p class="slide-in-left" style="font-size: large;">We offer a variety of boosting services including solo boost, duo boost, and placement matches.</p>
+    </div>
+    <div class="service">
+        <h2 class="slide-in-right" style="font-size: x-large;">Why Choose Us?</h2>
+        <p class="slide-in-right" style="font-size: large;">We guarantee fast, safe, and reliable boosting with 24/7 customer support.</p>
+    </div>
+</section>
+
+<section class="pricing">
+    <div>
+        <h2>Solo Boost</h2>
+        <p>From $10 per division</p>
+        <img src="pers1.jpg" class="profile">
+        <p>Adrian<br><span class="reviews">&#9733;&#9733;&#9733;&#9733;&#9733;<br>(80 reviews)</span></p>
+        
+    </div>
+    <div>
+        <h2>Duo Boost</h2>
+        <p>From $15 per division</p>
+        <img src="pers2.jpg" class="profile">
+        <p>Gabriel<br><span class="reviews">&#9733;&#9733;&#9733;&#9733;&#9733;<br>(75 reviews)</span></p>
+    </div>
+    <div>
+        <h2>Placement Matches</h2>
+        <p>From $5 per match</p>
+        <img src="pers3.jpg" class="profile">
+        <p>Maria<br><span class="reviews">&#9733;&#9733;&#9733;&#9733;&#9733;<br>(100 reviews)</span></p>
+    </div>
+</section>
+
+<section class="container">
+    <div class="service">
+        <h2>Testimonials</h2>
+        <p>"Amazing service! Boosted to Diamond in no time!" - Player1</p>
+        <p>"Very professional and quick." - Player2</p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>Contact us: boost@lolservice.com</p>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+        var serviceSections = document.querySelectorAll(".service .slide-in-left");
+
+        setTimeout(function(){
+            serviceSections.forEach(function(section){
+                section.classList.add("active");
+            });
+        }, 1000);
+    });
+
+    document.addEventListener("DOMContentLoaded", function(){
+        var serviceSections = document.querySelectorAll(".service .slide-in-right");
+
+        setTimeout(function(){
+            serviceSections.forEach(function(section){
+                section.classList.add("active");
+            });
+        }, 2100);
+    });
+
+    document.addEventListener("DOMContentLoaded", function(){
+        var slideElements = document.querySelectorAll(".slide-in-left");
+        setTimeout(function(){
+            slideElements.forEach(function(element){
+                element.classList.add("active");
+            });
+        }, 500);
+    });
+    document.addEventListener("DOMContentLoaded", function(){
+        var slideElements = document.querySelectorAll(".slide-in-right");
+        setTimeout(function(){
+            slideElements.forEach(function(element){
+                element.classList.add("active");
+            });
+        }, 900);
+    });
+</script>
+
+</body>
+</html>
