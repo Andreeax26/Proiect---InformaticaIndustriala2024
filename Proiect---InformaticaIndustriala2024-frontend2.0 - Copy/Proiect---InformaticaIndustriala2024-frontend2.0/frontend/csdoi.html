@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Strike Boosting Service</title>
+    <link rel="icon" href="logocs.jpg" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url("cs.jpg") no-repeat center center/cover;
+            background-position: auto;
+
+        }
+        header {
+            color:#e6f1f1;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        #showcase {
+            color: #fff;
+            height: 300px;
+            text-align: center;
+            padding-top: 100px;
+        }
+        #showcase h1 {
+            font-size: 55px;
+            margin: 0;
+        }
+        .service {
+            color: #fff;
+            background: #324f626c;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .pricing {
+            display: flex;
+            justify-content: space-around;
+            background: #324f626c;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .pricing div {
+            background: #457eb16a;
+            color: #fff;
+            padding: 20px;
+            height: 300px;
+            width: 200px;
+        }
+        .profile {
+            display: inline-block;
+            align-items:self-end;
+            justify-content: start;
+            margin-top: 10px;
+            width: 30px; /* Ajustează dimensiunea imaginilor */
+            height: 30px; /* Ajustează dimensiunea imaginilor */
+        }
+        .profile img {
+            border-radius: 50%;
+        }
+        .reviews {
+            display: flex;
+            align-items: center;
+            color: gold;
+            margin-top: 5px;
+        }
+        .reviews span {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+        footer {
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .slide-in-left, .slide-in-right {
+            opacity: 0;
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        }
+        .slide-in-left {
+            transform: translateX(-100%);
+        }
+        .slide-in-right {
+            transform: translateX(100%);
+        }
+        .slide-in-left.active, .slide-in-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .slide-down {
+            opacity: 0;
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+            transform: translateY(-100%);
+        }
+        .slide-down.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 13px;
+            font-size: 12px;
+            color: #fff;
+            background-color: #5ba0d1;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #669cca;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1 class="slide-in-left">Counter Strike Boosting Service</h1>
+    </div>
+</header>
+
+<section id="showcase">
+    <div class="container">
+        <h1 class="slide-in-right">Reach Your Desired Rank!</h1>
+        <p class="slide-in-right"style="font-size: x-large;">Professional and secure boosting services</p>
+    </div>
+</section>
+
+<section class="container">
+    <div class="service">
+        <h2 class="slide-in-left" style="font-size: x-large;">Our Services</h2>
+        <p class="slide-in-left" style="font-size: large;">We offer a variety of boosting services including rank boosts, win boosting, and placement matches for Counter-Strike.</p>
+    </div>
+    <div class="service">
+        <h2 class="slide-in-right" style="font-size: x-large;">Why Choose Us?</h2>
+        <p class="slide-in-right" style="font-size: large;">We provide fast, secure, and dependable boosting services with round-the-clock customer support to help you achieve your desired rank efficiently and safely.</p>
+    </div>
+</section>
+
+<section class="pricing">
+    <div>
+        <h2 class="slide-down">Solo Boost</h2>
+        <p class="slide-down">From $15 per division</p>
+        <p class="slide-down"><img src="pers1.jpg" class="profile"></p>
+        <p class="slide-down">Adrian<br><span class="reviews">&#9733;&#9733;&#9733;&#9733;&#9733;<br></span>(30 reviews)<br><a href="#" class="btn">Buy Now</a></p>
+    </div>
+    <div>
+        <h2 class="slide-down">Duo Boost</h2>
+        <p class="slide-down">From $20 per division</p>
+        <p class="slide-down"><img src="pers2.jpg" class="profile"></p>
+        <p class="slide-down">Gabriel<br><span class="reviews">&#9733;&#9733;&#9733;&#9733;&#9734;<br></span>(28 reviews)<br><a href="#" class="btn">Buy Now</a></p>
+    </div>
+    <div>
+        <h2 class="slide-down">Placement Matches</h2>
+        <p class="slide-down">From $10 per match</p>
+        <p class="slide-down"><img src="pers3.jpg" class="profile"></p>
+        <p class="slide-down">Maria<br><span class="reviews">&#9733;&#9733;&#9733;&#9733;&#189;<br></span>(87 reviews)<br><a href="#" class="btn">Buy Now</a></p>
+    </div>
+</section>
+
+<section class="container">
+    <div class="service">
+        <h2 class="slide-in-left">Testimonials</h2>
+        <p class="slide-in-right">"Fantastic service! Reached Global Elite quickly!" - Player 1</p>
+        <p class="slide-in-left">"Highly professional and efficient." - Player 2</p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>Contact us: boost@csservice.com</p>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+        var serviceSections = document.querySelectorAll(".service .slide-in-left");
+
+        setTimeout(function(){
+            serviceSections.forEach(function(section){
+                section.classList.add("active");
+            });
+        }, 1000);
+    });
+
+    document.addEventListener("DOMContentLoaded", function(){
+        var serviceSections = document.querySelectorAll(".service .slide-in-right");
+
+        setTimeout(function(){
+            serviceSections.forEach(function(section){
+                section.classList.add("active");
+            });
+        }, 2100);
+    });
+
+    document.addEventListener("DOMContentLoaded", function(){
+        var slideElements = document.querySelectorAll(".slide-in-left");
+        setTimeout(function(){
+            slideElements.forEach(function(element){
+                element.classList.add("active");
+            });
+        }, 500);
+    });
+    document.addEventListener("DOMContentLoaded", function(){
+        var slideElements = document.querySelectorAll(".slide-in-right");
+        setTimeout(function(){
+            slideElements.forEach(function(element){
+                element.classList.add("active");
+            });
+        }, 900);
+    });
+    document.addEventListener("DOMContentLoaded", function(){
+        var serviceSections = document.querySelectorAll(".service .slide-in-left");
+
+        setTimeout(function(){
+            serviceSections.forEach(function(section){
+                section.classList.add("active");
+            });
+        }, 3000);
+    });
+    document.addEventListener("DOMContentLoaded", function(){
+        var slideElements = document.querySelectorAll(".slide-down");
+        setTimeout(function(){
+            slideElements.forEach(function(element){
+                element.classList.add("active");
+            });
+        }, 3700);
+    });
+</script>
+
+</body>
+</html>
