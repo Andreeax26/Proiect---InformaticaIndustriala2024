@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #2a2a2a, #1b1b1b);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-box {
+    width: 300px;
+    padding: 40px;
+    position: relative;
+    background: #1e1e1e;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.login-box h1 {
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 24px;
+    color: #9b59b6;
+}
+
+.user-type {
+    margin-bottom: 20px;
+}
+
+.user-type label {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.user-type input[type="radio"] {
+    margin-right: 5px;
+}
+
+.textbox {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #9b59b6;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.textbox input::placeholder {
+    color: #9b59b6;
+}
+
+.btn {
+    width: 100%;
+    background: #9b59b6;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #8e44ad;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+p a {
+    color: #9b59b6;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Signup Page</title>
+    <link rel="stylesheet" href="loginsign.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h1>Sign Up</h1>
+            <form action="#">
+                <div class="user-type">
+                    <label for="buyer">
+                        <input type="radio" id="buyer" name="user_type" value="buyer" checked> Buyer
+                    </label>
+                    <label for="player">
+                        <input type="radio" id="player" name="user_type" value="player"> Player
+                    </label>
+                </div>
+                <div class="textbox">
+                    <input type="text" placeholder="Username" name="username" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Password" name="password" required>
+                </div>
+                <input type="submit" class="btn" value="Sign Up">
+                <p>Already have an account? <a href="login.html">Login</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

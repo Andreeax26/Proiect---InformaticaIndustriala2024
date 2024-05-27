@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Login Page</title>
+    <link rel="stylesheet" href="loginsign.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h1>Game Portal</h1>
+            <form id="loginForm" onsubmit="login(event)">
+                <div class="user-type">
+                    <label for="buyer">
+                        <input type="radio" id="buyer" name="user_type" value="buyer" checked> Buyer
+                    </label>
+                    <label for="player">
+                        <input type="radio" id="player" name="user_type" value="player"> Player
+                    </label>
+                </div>
+                <div class="textbox">
+                    <input type="text" id="username" placeholder="Username" name="username" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" id="password" placeholder="Password" name="password" required>
+                </div>
+                <input type="submit" class="btn" value="Login">
+                <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function login(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+            
+            // Get the entered username and password
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Check if the credentials are correct
+            if (username === "andreea" && password === "1234") {
+                // Redirect to index.html
+                window.location.href = "index.html";
+            } else {
+                // If the credentials are incorrect, you can show an error message or handle it accordingly
+                alert("Invalid username or password");
+            }
+        }
+    </script>
+</body>
+</html>
